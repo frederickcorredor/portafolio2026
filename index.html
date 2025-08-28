@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frederick Corredor — Desarrollador Web | HTML • CSS • JS • WordPress</title>
+  <meta name="description" content="Soy Frederick Corredor, desarrollador web front‑end. Creo sitios únicos, rápidos, responsivos y optimizados para SEO con HTML, CSS, JavaScript y WordPress." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="icono.webp" type="image/x-icon">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frederick Corredor — Desarrollador Web" />
+  <meta property="og:description" content="Webs únicas, rápidas y listas para convertir: HTML, CSS, JS, UX/UI, SEO, WordPress." />
+  <meta property="og:image" content="frederickcorredorlogo.webp" />
+  <meta property="og:url" content="#" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Frederick Corredor",
+    "jobTitle": "Web Developer",
+    "url": "#",
+    "image": "frederickcorredorlogo.webp",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "WordPress", "UX", "UI", "SEO"],
+    "sameAs": ["#", "#"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <img src="frederickcorredorlogo.webp" alt="Logo Frederick Corredor" loading="lazy" />
+      </a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#uxui">UX/UI</a></li>
+          <li><a href="#animaciones">Animaciones</a></li>
+          <li><a href="#seo">SEO</a></li>
+          <li><a href="#portfolio">Trabajos</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#contacto" class="tag">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span></button>
+    </div>
+    <div class="menu-panel" id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#uxui">UX/UI</a>
+      <a href="#animaciones">Animaciones</a>
+      <a href="#responsive">Responsive</a>
+      <a href="#seo">SEO</a>
+      <a href="#conversion">Conversión</a>
+      <a href="#diferenciador">Único por página</a>
+      <a href="#boring">¿Aburrida vs. Wow?</a>
+      <a href="#rendimiento">Rendimiento</a>
+      <a href="#elementor">¿Elementor?</a>
+      <a href="#portfolio">Trabajos</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <!-- HERO (AIDA: Atención) -->
+  <section class="hero section" id="top" aria-label="Hero">
+    <div class="spark" aria-hidden="true"></div>
+    <div class="container">
+      <div>
+        <span class="tag reveal">Desarrollador Web • HTML • CSS • JS • WordPress</span>
+        <h1 class="hero-title reveal" style="margin:.6rem 0 1rem">Creo webs únicas, rápidas y listas para convertir</h1>
+        <p class="hero-sub reveal">Soy <strong>Frederick Corredor</strong>. Diseño y programo sitios con <strong>HTML, CSS y JavaScript</strong> enfocados en <strong>UX/UI</strong>, <strong>SEO</strong> y <strong>alto rendimiento</strong>. Cada página es distinta, coherente con la marca y optimizada para generar ingresos.</p>
+        <div class="hero-cta reveal">
+          <a class="btn" href="#contacto">Cotiza tu web ahora</a>
+          <a class="btn secondary" href="#portfolio">Ver trabajos</a>
+        </div>
+        <div class="stats reveal" style="margin-top:22px">
+          <div class="stat"><h3><span class="counter" data-to="100">0</span>/100</h3><div class="muted">PageSpeed Móvil</div><div class="bar"><span data-bar="92"></span></div></div>
+          <div class="stat"><h3><span class="counter" data-to="2" data-decimals="0">0</span>s</h3><div class="muted">LCP objetivo</div><div class="bar"><span data-bar="85"></span></div></div>
+          <div class="stat"><h3><span class="counter" data-to="0.1" data-decimals="1">0</span></h3><div class="muted">CLS estable</div><div class="bar"><span data-bar="95"></span></div></div>
+        </div>
+      </div>
+
+      <img src="perfil.webp" alt="Foto de perfil de Frederick Corredor" class="reveal fotoPerfil">
+      <div class="card reveal highlight">
+        <h3 style="margin-top:0">¿Qué hago exactamente?</h3>
+        <p>Desarrollo front-end con código <strong>limpio</strong> y <strong>a medida</strong>. Me encargo de estructura semántica, accesibilidad, microinteracciones, animaciones en scroll, <em>lazy load</em>, <em>critical CSS</em>, y estrategia de contenido con método <strong>AIDA</strong>.</p>
+        <p style="margin:0">Integraciones a WordPress (plantillas personalizadas, ACF, Gutenberg, CF7 y WooCommerce) sin sacrificar rendimiento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Carousel (Portfolio Destacado) -->
+<section class="section" id="portfolio-3d" aria-label="Carrusel 3D de proyectos">
+<div class="container contcarrusel" >
+<div>
+  <h2 class="reveal">Algunos de mis trabajos</h2>
+<p class="muted reveal">Vista previa de algunos de mis trabajos.<br><strong>Tu web tambien podria tener un carrusel 3D</strong></p>
+</div>
+
+
+<div class="carousel3d-container reveal" role="region" aria-roledescription="carrusel" aria-label="Proyectos en 3D">
+<button class="carousel3d-nav left" aria-label="Anterior" title="Anterior" type="button">⟵</button>
+<div class="carousel3d-viewport">
+<div class="carousel3d" aria-live="polite">
+<div class="carousel3d-item"><img src="1.png" alt="Proyecto 1" loading="lazy"></div>
+<div class="carousel3d-item"><img src="2.png" alt="Proyecto 2" loading="lazy"></div>
+<div class="carousel3d-item"><img src="3.png" alt="Proyecto 3" loading="lazy"></div>
+<div class="carousel3d-item"><img src="4.png" alt="Proyecto 4" loading="lazy"></div>
+<div class="carousel3d-item"><img src="5.png" alt="Proyecto 5" loading="lazy"></div>
+<div class="carousel3d-item"><img src="6.png" alt="Proyecto 6" loading="lazy"></div>
+</div>
+</div>
+<button class="carousel3d-nav right" aria-label="Siguiente" title="Siguiente" type="button">⟶</button>
+</div>
+</div>
+</section>
+
+  <!-- SERVICIOS / Habilidades (AIDA: Interés) -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h2 class="reveal">HTML, CSS y JavaScript al máximo nivel</h2>
+      <p class="muted reveal">Me caracterizo por crear <strong>layouts semánticos</strong>, <strong>animaciones</strong>, <strong>componentes interactivos</strong> y <strong>sitios responsivos</strong>. Aquí un resumen de cómo trabajo:</p>
+      <div class="grid features">
+        <article class="card tilt reveal ">
+          <h3>HTML semántico</h3>
+          <p>Cabeceras correctas, landmarks accesibles, estructura clara para SEO y lectores de pantalla.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>CSS moderno</h3>
+          <p>Grid, Flexbox, variables CSS, <em>clamp()</em>, animaciones con <em>@keyframes</em>, temas y componentes reutilizables.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>JavaScript práctico</h3>
+          <p>IntersectionObserver, parallax, sliders, tabs, modales, validaciones, acceso a APIs y microinteracciones.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>WordPress a medida</h3>
+          <p>Plantillas ligeras y escalables, sin dependencias pesadas; integración con WooCommerce y CF7.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- UX/UI -->
+  <section class="section" id="uxui">
+    <div class="container">
+      <h2 class="reveal">UX/UI: claridad, consistencia y microdetalles</h2>
+      <div class="compare">
+        <div class="card reveal">
+          <h3>UX (Experiencia de Usuario)</h3>
+          <ul>
+            <li>Arquitectura de información y flujos enfocados en conversión.</li>
+            <li>Accesibilidad: contraste, navegación por teclado y lecturas claras.</li>
+            <li>Contenido persuasivo: beneficios antes que características.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>UI (Interfaz)</h3>
+          <ul>
+            <li>Diseño visual con jerarquía fuerte y componentes consistentes.</li>
+            <li>Microinteracciones: hovers, reveals y feedback sutil.</li>
+            <li>Prototipo en Figma o directamente en código.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animaciones -->
+  <section class="section" id="animaciones">
+    <div class="container">
+      <h2 class="reveal">Animaciones interactivas</h2>
+      <p class="muted reveal">Con CSS + JS: <strong>scroll reveal</strong>, <strong>hover states</strong>, <strong>parallax</strong>, contadores y sliders accesibles.</p>
+      <div class="grid features">
+        <div class="card reveal"><strong>Scroll reveal:</strong> cada bloque aparece al entrar en viewport (esta web lo hace).</div>
+        <div class="card reveal"><strong>Hover:</strong> botones, tarjetas y enlaces reaccionan sin recargar la página.</div>
+        <div class="card reveal"><strong>Parallax:</strong> hero con movimiento sutil según el scroll y el mouse.</div>
+        <div class="card reveal"><strong>Contadores:</strong> números animados que muestran impacto y resultados.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO -->
+  <section class="section" id="seo">
+    <div class="container">
+      <h2 class="reveal">SEO técnico desde el código</h2>
+      <div class="grid features">
+        <div class="card reveal"><strong>Metas y OG:</strong> títulos, descripciones y tarjetas sociales listos.</div>
+        <div class="card reveal"><strong>HTML semántico:</strong> headings y landmarks correctos.</div>
+        <div class="card reveal"><strong>Rich Snippets:</strong> JSON‑LD para servicios/persona.</div>
+        <div class="card reveal"><strong>Velocidad:</strong> imágenes WebP/AVIF, minificación y lazy load.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Único por página -->
+  <section class="section" id="diferenciador">
+    <div class="container">
+      <h2 class="reveal">Diseños únicos por página, coherentes con tu marca</h2>
+      <p class="muted reveal">Trabajo con un sistema de diseño: base consistente y variantes por sección/página. Sin clones, sin plantillas genéricas.</p>
+    </div>
+  </section>
+
+  <!-- Aburrida vs Wow -->
+  <section class="section" id="boring">
+    <div class="container">
+      <h2 class="reveal">¿Web aburrida o memorable?</h2>
+      <div class="demo">
+        <div class="plain reveal">
+          <h3>Aburrida</h3>
+          <p>Títulos genéricos, bloques interminables de texto, sin interacción y con poca jerarquía.</p>
+          <button class="btn secondary" disabled>Más información</button>
+        </div>
+        <div class="wow reveal">
+          <h3>Memorable</h3>
+          <p>Storytelling, jerarquía visual, animaciones sutiles, CTA claros y contenido que conecta.</p>
+          <a class="btn" href="#contacto">Quiero una web así</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rendimiento -->
+  <section class="section" id="rendimiento">
+    <div class="container">
+      <h2 class="reveal">Rendimiento y tiempos de carga</h2>
+      <p class="muted reveal">Imágenes WebP/AVIF, lazy load, minificación, carga selectiva, caché + CDN y <em>critical CSS</em>. Objetivo: <strong>LCP &lt; 2.5s</strong>, <strong>CLS &lt; .1</strong>, <strong>90–100/100</strong> en móvil.</p>
+      <div class="grid features">
+        <div class="card reveal">Comparo y mejoro Core Web Vitals: LCP, INP (antes FID) y CLS.</div>
+        <div class="card reveal">Elimino dependencias pesadas y cargo sólo lo necesario.</div>
+        <div class="card reveal">Hosting optimizado + CDN para servir archivos cercanos al usuario.</div>
+        <div class="card reveal">Estrategias de <em>preload</em>, <em>defer</em> y <em>lazy</em> para JS y medios.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elementor vs Yo -->
+  <section class="section" id="elementor">
+    <div class="container">
+      <h2 class="reveal">¿Mejor que Elementor? Sí, en rendimiento y personalización</h2>
+      <div class="compare">
+        <div class="card reveal">
+          <h3>Elementor / No‑code</h3>
+          <ul>
+            <li>Código pesado por widget y CSS/JS duplicado.</li>
+            <li>Diseños repetidos y limitaciones para interacciones avanzadas.</li>
+            <li>Dependencia de un ecosistema externo.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Código a medida conmigo</h3>
+          <ul>
+            <li>Web ligera (&lt; 1 MB), menos requests, mejor PageSpeed.</li>
+            <li>Diseño único + animaciones personalizadas.</li>
+            <li>SEO técnico impecable y escalabilidad real.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios (Carrusel) -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <h2 class="reveal">Opiniones de clientes</h2>
+      <div class="carousel reveal" role="region" aria-label="Carrusel de testimonios">
+        <div class="track" id="track" aria-live="polite">
+          <div class="slide">
+            <blockquote>“Frederick transformó nuestra presencia digital. La web carga rapidísimo y las consultas aumentaron desde el primer mes.”</blockquote>
+            <footer>— Renacer Creativo</footer>
+          </div>
+          <div class="slide">
+            <blockquote>“Nos entregó un sitio elegante, con animaciones modernas y 100% administrable. ¡Excelente trabajo!”</blockquote>
+            <footer>— Paradise Travel</footer>
+          </div>
+          <div class="slide">
+            <blockquote>“Pasamos de Elementor a una plantilla a medida. El rendimiento y el SEO mejoraron notablemente.”</blockquote>
+            <footer>— SAMA Market Research</footer>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="prev" aria-label="Anterior">⟵</button>
+          <button id="next" aria-label="Siguiente">⟶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="reveal">Trabajos destacados</h2>
+      <div class="grid portfolio">
+        <article class="project reveal">
+          <img src="5.png" alt="Proyecto corporativo" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">Web Corporativa — SAMA Market Research</div>
+            <p class="muted">Investigación de mercados, animaciones de estadísticas y SEO técnico.</p>
+          </div>
+          <a class="visit" href="https://samamarketresearch.co" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+        <article class="project reveal">
+          <img src="1.png" alt="Tienda en línea" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">E‑commerce — Paradise Travel</div>
+            <p class="muted">Catálogo de paquetes, pagos y diseño responsive de alto rendimiento.</p>
+          </div>
+          <a class="visit" href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+        <article class="project reveal">
+          <img src="3.png" alt="Landing de servicios" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">Landing Page — Renacer Creativo</div>
+            <p class="muted">Hero de alto impacto, CTA claros y prueba social.</p>
+          </div>
+          <a class="visit" href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section class="section" id="precios">
+    <div class="container">
+      <h2 class="reveal">Planes y Precios</h2>
+      <p class="muted reveal">Tabla referencial (COP). Se ajusta según alcance, integraciones y tiempos.</p>
+      <div class="card reveal" style="overflow:auto">
+        <table aria-label="Tabla de precios">
+          <thead>
+            <tr>
+              <th>Tipo de Página Web</th>
+              <th>Características Incluidas</th>
+              <th>Precio (COP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Tipo">Landing Page Básica</td>
+              <td data-label="Características">Una sola sección con scroll largo, 4–6 bloques (hero, servicios, testimonios, contacto, etc.), diseño responsive y animaciones básicas</td>
+              <td data-label="Precio">$350,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Web Corporativa Estándar</td>
+              <td data-label="Características">3–5 páginas/secciones independientes (Inicio, Servicios, Nosotros, Blog, Contacto), formulario de contacto, diseño personalizado</td>
+              <td data-label="Precio">$500,000</td>
+            </tr>
+            <tr class="featured">
+              <td data-label="Tipo">Web Corporativa Avanzada</td>
+              <td data-label="Características">6–8 páginas/secciones, blog integrado, animaciones, SEO básico, integración con redes sociales</td>
+              <td data-label="Precio">$700,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Catálogo de Productos (sin pago online)</td>
+              <td data-label="Características">Web corporativa + catálogo (10–30 productos), buscador/filtros, fichas de producto sin pasarela de pago</td>
+              <td data-label="Precio">$850,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online WooCommerce Básica</td>
+              <td data-label="Características">Hasta 30 productos, carrito de compras, pasarela de pago (PayU, Stripe, MercadoPago), diseño responsive</td>
+              <td data-label="Precio">$1,000,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online WooCommerce Avanzada</td>
+              <td data-label="Características">+50 productos, variaciones (tallas, colores, etc.), integraciones de envío, optimización de rendimiento y seguridad</td>
+              <td data-label="Precio">$1,300,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online Premium</td>
+              <td data-label="Características">+100 productos, automatizaciones (correos, cupones, ventas cruzadas), SEO avanzado, integración con marketing digital</td>
+              <td data-label="Precio">$1,600,000+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto / CTA (AIDA: Acción) -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="grid" style="grid-template-columns:1.1fr .9fr">
+        <div class="reveal">
+          <h2>Hablemos de tu proyecto</h2>
+          <p class="muted">Cuéntame qué necesitas y te propongo una solución a medida con objetivos, tiempos y presupuesto claros.</p>
+          <p><a class="btn" href="#" aria-label="Escríbeme por WhatsApp">Escríbeme por WhatsApp</a> <a class="btn secondary" href="mailto:tuemail@dominio.com">tuemail@dominio.com</a></p>
+        </div>
+        <form class="card reveal" onsubmit="event.preventDefault(); alert('¡Gracias! Me pondré en contacto.');">
+          <label>Nombre<input required style="width:100%;margin-top:6px" placeholder="Tu nombre"/></label>
+          <label style="display:block;margin-top:12px">Email<input type="email" required style="width:100%;margin-top:6px" placeholder="tucorreo@dominio.com"/></label>
+          <label style="display:block;margin-top:12px">Mensaje<textarea required rows="4" style="width:100%;margin-top:6px" placeholder="Cuéntame brevemente tu proyecto"></textarea></label>
+          <button class="btn" style="margin-top:12px">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:12px; align-items:center">
+      <small class="muted">© <span id="y"></span> Frederick Corredor — Hecho con HTML, CSS y JS</small>
+      <div style="display:flex; gap:8px; align-items:center">
+        <a class="tag" href="#top">↑ Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
