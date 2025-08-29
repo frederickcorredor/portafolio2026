@@ -5,7 +5,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto } }
-body{margin:0; color:var(--ink); background:radial-gradient(1200px 600px at 20% -10%, rgba(255,215,0,.12), transparent), linear-gradient(180deg,var(--bg),#050607 120%); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+body{margin:0; color:var(--ink);overflow-x: hidden; background:radial-gradient(1200px 600px at 20% -10%, rgba(255,215,0,.12), transparent), linear-gradient(180deg,var(--bg),#050607 120%); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
 
 @font-face {
   font-family: "Cubic";
@@ -29,9 +29,10 @@ body{margin:0; color:var(--ink); background:radial-gradient(1200px 600px at 20% 
 .reveal.in-view{opacity:1; transform:none; filter:none;position: relative; z-index: 3;}
 
 @media(max-width:650px){
-  .tag{max-width: 280px;padding: .35rem 1.4rem;}
+  .tag{max-width: 240px;background: none;border: none;padding: 2px;}
   .hero-title{max-width: 300px;}
   .section{padding: 16px 0px;}
+  .card{margin-top: 12px;}
 }
 
 /* Focus styles (a11y) */
@@ -64,7 +65,7 @@ nav a:hover{background:rgba(255,255,255,.06)}
 body.no-scroll { overflow: hidden; }
 
 /* Hero */
-.hero{position:relative; overflow:hidden; padding-top:clamp(80px,4vw,90px)}
+.hero{position:relative; overflow:hidden; padding-top:clamp(50px,3vw,90px)}
 .hero .container{display:grid; grid-template-columns: 1.2fr .8fr; align-items:end; gap:clamp(16px,4vw,36px);position: relative;}
 .hero-title{font-size: clamp(30px, 6vw, 40px); letter-spacing:.3px; line-height:1.06; font-weight:900}
 .hero-sub{font-size:clamp(16px,2.4vw,20px); color:var(--muted)}
@@ -75,12 +76,14 @@ body.no-scroll { overflow: hidden; }
 .card.highlight{position:relative;border-radius:var(--radius);overflow:hidden}
 .card.highlight::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:linear-gradient(90deg,transparent 0%,transparent 40%,var(--gold) 50%,transparent 60%,transparent 100%);background-size:200% 100%;animation:neon-border 8s linear infinite;filter:drop-shadow(0 0 6px var(--gold)) drop-shadow(0 0 12px var(--gold));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}@keyframes neon-border{0%{background-position:0% 50%}100%{background-position:200% 50%}}
-
+#portfolio-3d{background: linear-gradient(174deg,rgba(15, 15, 15, 0), rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),#f2ae1c4e,#f2ae1c4e,#f2ae1c8d, #f2ae1cde,#f2ae1c8d,#f2ae1c4e,#f2ae1c4e,rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0), rgba(15, 15, 15, 0));min-height: 55vh;
+    display: flex
+;}
 
 
 /*carrusel*/
 .contcarrusel{display:flex;flex-wrap: wrap;align-content: center;justify-content: center;align-items: center;gap: 16px;}
-table tr.featured td{background:linear-gradient(180deg,rgba(255,215,0,.06),transparent 60%)}table tr.featured td:first-child{position:relative}table tr.featured td:first-child::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:6px;background:linear-gradient(180deg,var(--gold),var(--gold-2));box-shadow:0 0 14px rgba(255,215,0,.45)}@media(max-width:760px){table tr.featured{border:1px solid rgba(255,215,0,.35)}}
+table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),transparent 60%)}table tr.featured td:first-child{position:relative}table tr.featured td:first-child::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:6px;background:linear-gradient(180deg,var(--gold),var(--gold-2));box-shadow:0 0 14px rgba(255,215,0,.45)}@media(max-width:760px){table tr.featured{border:1px solid rgba(255,215,0,.35)}}
 
 .carousel3d-container{display:flex;justify-content:center;align-items:center;position:relative;gap:12px}
 .carousel3d-nav{position:absolute;top:50%;transform:translateY(-50%);background:#141820;border:1px solid rgba(255,255,255,.12);color:var(--ink);padding:.6rem .8rem;border-radius:12px;cursor:pointer;z-index:5}
@@ -166,7 +169,7 @@ footer{border-top:1px solid rgba(255,255,255,.08); padding:46px 0; background:#0
   .hero{padding-top: 21px;}
   nav ul{display:none}
   .burger{display:grid}
-  .fotoPerfil { display: none; }
+  .fotoPerfil {top: 4px;right: -36px;width: 154px;z-index: 1 !important;border-radius: 100% 0% 0px 100%;box-shadow: 0px 0px 7px 0px;}
 }
 
 /* Reduced motion */
