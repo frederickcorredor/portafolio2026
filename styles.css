@@ -28,6 +28,12 @@ body{margin:0; color:var(--ink); background:radial-gradient(1200px 600px at 20% 
 .reveal{opacity:0; transform: translateY(24px); filter: blur(2px); transition: all .7s cubic-bezier(.2,.6,.2,1)}
 .reveal.in-view{opacity:1; transform:none; filter:none;position: relative; z-index: 3;}
 
+@media(max-width:650px){
+  .tag{max-width: 280px;padding: .35rem 1.4rem;}
+  .hero-title{max-width: 300px;}
+  .section{padding: 16px 0px;}
+}
+
 /* Focus styles (a11y) */
 a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 12px; }
 
@@ -157,9 +163,10 @@ footer{border-top:1px solid rgba(255,255,255,.08); padding:46px 0; background:#0
 /* Responsive header */
 @media (max-width: 920px){
   .hero .container{grid-template-columns:1fr}
+  .hero{padding-top: 21px;}
   nav ul{display:none}
   .burger{display:grid}
-  .fotoPerfil { position: static !important; margin: 12px auto 0; width: 160px; height: 160px; object-fit: cover; }
+  .fotoPerfil { display: none; }
 }
 
 /* Reduced motion */
