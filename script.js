@@ -238,13 +238,19 @@ if(!viewport||!ring||!items.length) return;
 let isDown=false, curX=0, lastX=0, lastMove=0, move=0, rafId=null;
 
 
-const onResize=()=>{
-const rect = viewport.getBoundingClientRect();
-const len = items.length; const deg = 360/len; const gap=20;
-const tz = distZ(rect.width, len, gap);
-container.style.width = (tz*2 + gap*len) + 'px';
-container.style.height = Math.tan((90*Math.PI/180)/2)*1*tz + 'px';
-items.forEach((it,i)=>{ it.style.setProperty('--rotatey', (deg*i)+'deg'); it.style.setProperty('--tz', tz+'px'); });
+const onResize = () => {
+  const rect = viewport.getBoundingClientRect();
+  const len = items.length; const deg = 360/len; const gap=20;
+  const tz = distZ(rect.width, len, gap);
+
+  const targetWidth = Math.min(window.innerWidth, (tz*2 + gap*len));
+  container.style.width  = targetWidth + 'px';
+  container.style.height = Math.tan((90*Math.PI/180)/2)*tz + 'px';
+
+  items.forEach((it,i)=>{
+    it.style.setProperty('--rotatey', (deg*i)+'deg');
+    it.style.setProperty('--tz', tz+'px');
+  });
 };
 
 
