@@ -121,6 +121,20 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 .tilt{transform-style:preserve-3d; transition: transform .15s}
 .tilt:hover{transform: translateY(-6px); box-shadow: 0 8px 28px rgba(255, 215, 0, .18);}
 
+
+/*uxui*/
+#uxui{
+  background-image: url(fondoux.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 24px;
+  padding: 24px 6px;
+
+    .container{background-color: #00000093; padding: 24px;border-radius: 12px;}
+    p{padding: 16px; text-align: center;}
+}
+
 /* Comparison */
 .compare{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px}
 .compare .card ul{margin:0; padding-left:18px}
