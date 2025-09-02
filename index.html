@@ -89,6 +89,70 @@
     </div>
   </section>
 
+  <!-- SERVICIOS / Habilidades (AIDA: Interés) -->
+  <section class="section" id="servicios">
+  <div class="container">
+    <h2 class="reveal">HTML, CSS y JavaScript al máximo nivel</h2>
+    <p class="muted reveal">
+      <strong>HTML semántico</strong>, <strong>CSS moderno</strong> y <strong>JavaScript</strong> para crear
+      <strong>layouts accesibles</strong>, <strong>componentes interactivos</strong> y
+      <strong>sitios 100% responsivos</strong>, rápidos y escalables.
+    </p>
+
+    <!-- NUEVO: layout 2 columnas -->
+    <div class="servicios-two-col">
+      
+
+      <!-- DERECHA: features original -->
+      <div class="grid features">
+        <article class="card tilt reveal">
+          <h3>Landing Pages</h3>
+          <p>Diseños enfocados en conversión, tiempos de carga mínimos; compatibilidad total con móviles.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>Menús digitales</h3>
+          <p>Cartas interactivas y visuales, fáciles de editar; acceso inmediato mediante código QR.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>Páginas corporativas</h3>
+          <p>Estructura profesional y adaptable, identidad visual sólida; autogestión rápida del contenido.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>WordPress a medida</h3>
+          <p>Plantillas ligeras y escalables, sin dependencias pesadas; integración con WooCommerce.</p>
+        </article>
+      </div>
+
+      <!-- DERECHA: stage 3D decorativo -->
+      <aside class="code-stage reveal" aria-hidden="true">
+
+        <!-- Tarjeta 4 -->
+        <section class="code-card c4 float" style="--ry:-30deg; --z:80px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// styles.css</span>
+          .container{ display:grid; gap:<span class="n">16px</span>; place-items:center; }</pre>
+        </section>
+
+        <!-- Tarjeta 5 -->
+        <section class="code-card c5 float" style="--ry:34deg; --z:120px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// utils.ts</span>
+          <span class="k">export</span> <span class="k">const</span> delay=(ms)=> <span class="k">new</span> <span class="fn">Promise</span>(r=> <span class="fn">setTimeout</span>(r,ms))</pre>
+        </section>
+
+        <!-- Tarjeta 6 -->
+        <section class="code-card c6 float" style="--ry:-23deg; --z:75px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// index.html</span>
+          &lt;<span class="k">div</span> class=<span class="s">"app"</span>&gt;Hola Mundo&lt;/<span class="k">div</span>&gt;</pre>
+        </section>
+      </aside>
+    </div>
+    <!-- /NUEVO -->
+  </div>
+</section>
+
+
   <!-- 3D Carousel (Portfolio Destacado) -->
 <section class="section" id="portfolio-3d" aria-label="Carrusel 3D de proyectos">
 <div class="container contcarrusel" >
@@ -115,74 +179,13 @@
 </div>
 </section>
 
-  <!-- SERVICIOS / Habilidades (AIDA: Interés) -->
-  <section class="section" id="servicios">
-  <div class="container">
-    <h2 class="reveal">HTML, CSS y JavaScript al máximo nivel</h2>
-    <p class="muted reveal">
-      <strong>HTML semántico</strong>, <strong>CSS moderno</strong> y <strong>JavaScript</strong> para crear
-      <strong>layouts accesibles</strong>, <strong>componentes interactivos</strong> y
-      <strong>sitios 100% responsivos</strong>, rápidos y escalables.
-    </p>
-
-    <!-- NUEVO: layout 2 columnas -->
-    <div class="servicios-two-col">
-      <!-- IZQUIERDA: stage 3D decorativo -->
-      <aside class="code-stage reveal" aria-hidden="true">
-
-        <!-- Tarjeta 4 -->
-        <section class="code-card c4 float" style="--ry:43deg; --z:80px">
-          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-          <pre class="code"><span class="c">// styles.css</span>
-.container{ display:grid; gap:<span class="n">16px</span>; place-items:center; }</pre>
-        </section>
-
-        <!-- Tarjeta 5 -->
-        <section class="code-card c5 float" style="--ry:34deg; --z:120px">
-          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-          <pre class="code"><span class="c">// utils.ts</span>
-<span class="k">export</span> <span class="k">const</span> delay=(ms)=> <span class="k">new</span> <span class="fn">Promise</span>(r=> <span class="fn">setTimeout</span>(r,ms))</pre>
-        </section>
-
-        <!-- Tarjeta 6 -->
-        <section class="code-card c6 float" style="--ry:-23deg; --z:30px">
-          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-          <pre class="code"><span class="c">// index.html</span>
-&lt;<span class="k">div</span> class=<span class="s">"app"</span>&gt;Hola Mundo&lt;/<span class="k">div</span>&gt;</pre>
-        </section>
-      </aside>
-
-      <!-- DERECHA: features original -->
-      <div class="grid features">
-        <article class="card tilt reveal">
-          <h3>HTML semántico</h3>
-          <p>Cabeceras correctas, landmarks accesibles, estructura clara para SEO y lectores de pantalla.</p>
-        </article>
-        <article class="card tilt reveal">
-          <h3>CSS moderno</h3>
-          <p>Grid, Flexbox, variables CSS, <em>clamp()</em>, animaciones con <em>@keyframes</em>, temas y componentes reutilizables.</p>
-        </article>
-        <article class="card tilt reveal">
-          <h3>JavaScript práctico</h3>
-          <p>IntersectionObserver, parallax, sliders, tabs, modales, validaciones, acceso a APIs y microinteracciones.</p>
-        </article>
-        <article class="card tilt reveal">
-          <h3>WordPress a medida</h3>
-          <p>Plantillas ligeras y escalables, sin dependencias pesadas; integración con WooCommerce y CF7.</p>
-        </article>
-      </div>
-    </div>
-    <!-- /NUEVO -->
-  </div>
-</section>
-
 
   <!-- UX/UI -->
   <section class="section" id="uxui">
     <div class="container">
-      <h2 class="reveal">UX/UI: claridad, consistencia y microdetalles</h2>
+      <h2 class="reveal">Claridad, consistencia y microdetalles</h2>
       <p class="muted reveal">
-      priorizo la <strong>claridad</strong> (arquitectura de información y jerarquía visual nítidas), la <strong>consistencia</strong>y los <strong>microdetalles</strong>que hacen la interfaz predecible y agradable. Resultado: navegación intuitiva, menos dudas y <strong>más conversión</strong>.
+      Priorizo la <strong>arquitectura de información y jerarquía visual</strong>, los <strong>microdetalles</strong>que hacen la interfaz predecible y agradable. <br><br> <b>Resultado:</b> navegación intuitiva, menos dudas y <strong>más conversión</strong>.
       </p>
       <div class="compare">
         <div class="card reveal">
