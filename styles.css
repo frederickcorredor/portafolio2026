@@ -19,7 +19,7 @@ h2{text-align: center;padding: 16px;}
 
 /* Utility */
 .container{width:min(1200px,92%); margin-inline:auto}
-.section{padding: clamp(64px, 10vw, 64px) 0}
+.section{padding: clamp(45px, 10vw, 45px) 0}
 .grid{display:grid; gap:clamp(16px,2vw,28px)}
 .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.95rem 1.25rem; border-radius:14px; background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#111; font-weight:700; text-decoration:none; box-shadow:var(--shadow); border:0; cursor:pointer}
 .btn.secondary{background:#15181e; color:var(--ink); border:1px solid rgba(255,255,255,.08)}
@@ -45,7 +45,7 @@ header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(1.2) blur(10
 header.scrolled { background: linear-gradient(180deg, rgba(10,12,16,.92), rgba(10,12,16,.6)); }
 .nav{display:flex; justify-content:space-between; align-items:center; padding:14px 0}
 .brand{display:flex; align-items:center; gap:.8rem}
-.brand img{width:150px; height:auto; border-radius:10px}
+.brand img{width:90px; height:auto; border-radius:10px}
 .brand .name{font-weight:800; letter-spacing:.3px}
 nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
 nav a{color:var(--ink); text-decoration:none; padding:.6rem .8rem; border-radius:10px}
@@ -73,18 +73,17 @@ body.no-scroll { overflow: hidden; }
 .hero-sub{font-size:clamp(16px,2.4vw,20px); color:var(--muted)}
 .hero-cta{display:flex; align-items:center; gap:12px; margin-top:18px}
 .spark{position:absolute; inset:auto auto -15% -15%; width:60vw; height:60vw; background:radial-gradient(closest-side, rgba(255,215,0,.15), transparent 70%); filter: blur(40px); transform:translateY(var(--pY, 0)) translateX(var(--pX, 0))}
-.fotoPerfil{position: absolute !important; z-index: 4!important; top: 120px;right: 16px; border-radius: 50%;width: 150px;}
+.fotoPerfil{position: absolute !important; z-index: 4!important; top: 80px;right: 16px; border-radius: 50%;width: 140px;}
 
 .card.highlight{position:relative;border-radius:var(--radius);overflow:hidden}
 .card.highlight::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:linear-gradient(90deg,transparent 0%,transparent 40%,var(--gold) 50%,transparent 60%,transparent 100%);background-size:200% 100%;animation:neon-border 8s linear infinite;filter:drop-shadow(0 0 6px var(--gold)) drop-shadow(0 0 12px var(--gold));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}@keyframes neon-border{0%{background-position:0% 50%}100%{background-position:200% 50%}}
 #portfolio-3d{background: linear-gradient(174deg,rgba(15, 15, 15, 0), rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),#f2ae1c4e,#f2ae1c4e,#f2ae1c8d, #f2ae1cde,#f2ae1c8d,#f2ae1c4e,#f2ae1c4e,rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0),rgba(15, 15, 15, 0), rgba(15, 15, 15, 0));min-height: 55vh;
-    display: flex
-;}
+    display: flex;}
 
 
 /*carrusel*/
-.contcarrusel{display:flex;flex-wrap: wrap;align-content: center;justify-content: center;align-items: center;gap: 16px; overflow-x: hidden;min-height: 340px;width: 100%;}
+.contcarrusel{display:flex; flex-direction:column; flex-wrap:wrap ;align-content: center;justify-content: center;align-items: center;gap: 16px; overflow-x: hidden;min-height: 340px;width: 100%;}
 table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),transparent 60%)}table tr.featured td:first-child{position:relative}table tr.featured td:first-child::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:6px;background:linear-gradient(180deg,var(--gold),var(--gold-2));box-shadow:0 0 14px rgba(255,215,0,.45)}@media(max-width:760px){table tr.featured{border:1px solid rgba(255,215,0,.35)}}
 .textcarusel{text-align: center; padding: 16px;}
 .carousel3d-container{display:flex;justify-content:center;align-items:center;position:relative;gap:12px}
@@ -234,7 +233,9 @@ footer{border-top:1px solid rgba(255,255,255,.08); padding:46px 0; background:#0
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.06);
   will-change: transform;
+
 }
+
 
 /* Barra superior + dots */
 .code-stage .code-card::before{
