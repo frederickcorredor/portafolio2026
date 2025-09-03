@@ -73,7 +73,7 @@ body.no-scroll { overflow: hidden; }
 .hero-sub{font-size:clamp(16px,2.4vw,20px); color:var(--muted)}
 .hero-cta{display:flex; align-items:center; gap:12px; margin-top:18px}
 .spark{position:absolute; inset:auto auto -15% -15%; width:60vw; height:60vw; background:radial-gradient(closest-side, rgba(255,215,0,.15), transparent 70%); filter: blur(40px); transform:translateY(var(--pY, 0)) translateX(var(--pX, 0))}
-.fotoPerfil{position: absolute !important; z-index: 4!important; top: 100px;right: 16px; border-radius: 50%;}
+.fotoPerfil{position: absolute !important; z-index: 4!important; top: 120px;right: 16px; border-radius: 50%;width: 150px;}
 
 .card.highlight{position:relative;border-radius:var(--radius);overflow:hidden}
 .card.highlight::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:linear-gradient(90deg,transparent 0%,transparent 40%,var(--gold) 50%,transparent 60%,transparent 100%);background-size:200% 100%;animation:neon-border 8s linear infinite;filter:drop-shadow(0 0 6px var(--gold)) drop-shadow(0 0 12px var(--gold));
