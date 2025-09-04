@@ -21,6 +21,7 @@ h2{text-align: center;padding: 16px;}
 .container{width:min(1200px,92%); margin-inline:auto}
 .section{padding: clamp(45px, 10vw, 45px) 0}
 .grid{display:grid; gap:clamp(16px,2vw,28px)}
+.flex{display: flex;flex-wrap: wrap; justify-content: center;align-items: center; gap: 16px;  div{min-width: 380px; width: 50%;} form{min-width: 380px;}}
 .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.95rem 1.25rem; border-radius:14px; background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#111; font-weight:700; text-decoration:none; box-shadow:var(--shadow); border:0; cursor:pointer}
 .btn.secondary{background:#15181e; color:var(--ink); border:1px solid rgba(255,255,255,.08)}
 .btn:disabled { opacity:.55; cursor:not-allowed; filter:grayscale(.2); }
