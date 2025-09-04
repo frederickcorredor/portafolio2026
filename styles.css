@@ -92,7 +92,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 .carousel3d-nav.right{right:-10px}
 .carousel3d-viewport{width:260px;height:190px;perspective:1000px}
 @media(min-width:576px){.carousel3d-viewport{width:300px;height:220px}}
-.carousel3d{--rotatey:0;position:relative;width:100%;height:100%;transform:rotateY(var(--rotatey));transform-style:preserve-3d;user-select:none;cursor:grab}
+.carousel3d{--rotatey:0;position:relative;width:100%;height:80%;transform:rotateY(var(--rotatey));transform-style:preserve-3d;user-select:none;cursor:grab}
 .carousel3d:active{cursor:grabbing}
 .carousel3d-item{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;border-radius:12px;transition:opacity .6s}
 .carousel3d-item img{width:100%;height:100%;object-fit:cover;border-radius:12px;filter:saturate(.95);box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.06)}
@@ -151,8 +151,8 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 /* Portfolio */
 .portfolio{grid-template-columns: repeat(auto-fit,minmax(260px, 1fr))}
 .project{position:relative; overflow:hidden; border-radius:16px; border:1px solid rgba(255,255,255,.06)}
-.project img{width:100%; height:180px; object-fit:cover; display:block; filter:saturate(.9)}
-.project .p-body{padding:14px}
+.project img{width:100%; height:200px; object-fit:cover; display:block; filter:saturate(.9)}
+.project .p-body{padding:14px;min-height: 170px;}
 .project .p-title{font-weight:800}
 .project .visit{position:absolute; inset:auto 10px 10px auto; background:rgba(0,0,0,.55); border:1px solid rgba(255,255,255,.12); padding:.45rem .7rem; border-radius:10px; text-decoration:none; color:#fff}
 .project:hover img{transform:scale(1.05); transition: .5s}
