@@ -46,7 +46,7 @@ header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(1.2) blur(10
 header.scrolled { background: linear-gradient(180deg, rgba(10,12,16,.92), rgba(10,12,16,.6)); }
 .nav{display:flex; justify-content:space-between; align-items:center; padding:14px 0}
 .brand{display:flex; align-items:center; gap:.8rem}
-.brand img{width:90px; height:auto; border-radius:10px}
+.brand img{width:152px; height:auto; border-radius:10px;margin-top:-30px;margin-bottom:-30px;}
 .brand .name{font-weight:800; letter-spacing:.3px}
 nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
 nav a{color:var(--ink); text-decoration:none; padding:.6rem .8rem; border-radius:10px}
