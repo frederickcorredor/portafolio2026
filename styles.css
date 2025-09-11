@@ -150,7 +150,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 .carousel button{background:#141820; border:1px solid rgba(255,255,255,.12); color:var(--ink); padding:.6rem .8rem; border-radius:12px; cursor:pointer}
 
 /* Portfolio */
-.portfolio{grid-template-columns: repeat(auto-fit,minmax(260px, 1fr))}
+.portfolio{grid-template-columns: repeat(auto-fit,minmax(280px, 1fr))}
 .project{position:relative; overflow:hidden; border-radius:16px; border:1px solid rgba(255,255,255,.06)}
 .project img{width:100%; height:200px; object-fit:cover; display:block; filter:saturate(.9)}
 .project .p-body{padding:14px;min-height: 170px;}
